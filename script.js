@@ -651,7 +651,7 @@ function startGame() {
             y: -30,
             width: 30,
             height: 30,
-            speed: 7,
+            speed: 5,
             color: "green"
         });
     }
@@ -1003,7 +1003,7 @@ function startGame() {
         // spawning baseado em tempo
         spawnTimer++;
         if (spawnTimer > 20) { // Spawn a cada 100 frames
-            for (let i = 0; i < 5; i++) { // Spawn 1 inimigo por vez
+            for (let i = 0; i < 3; i++) { // Spawn 1 inimigo por vez
                 spawnEnemy();
             }
             spawnTimer = 0;
