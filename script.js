@@ -651,7 +651,7 @@ function startGame() {
             y: -30,
             width: 30,
             height: 30,
-            speed: 8,
+            speed: 7,
             color: "green"
         });
     }
