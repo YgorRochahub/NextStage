@@ -345,7 +345,7 @@ function startGame() {
     // Configuração do jogador
     const player = {
         x: 100, y: canvas.height - 150, width: 14, height: 14,
-        color: "red", speed: 5, velY: 0, gravity: 0.5, jumpPower: -15,
+        color: "red", speed: 5, velY: 0, gravity: 0.5, jumpPower: 15,
         onGround: false
     };
 
