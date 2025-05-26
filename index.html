@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextStage</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao NextStage!</h1>
+    </header>
+
+    <main>
+        <button id="start-button">Iniciar Jogo</button>
+        <button id="settings-button">Configurações</button>
+        <button id="about-button">Sobre</button>
+    </main>
+
+    <!-- Seção "Jogo" inicialmente oculta -->
+    <div id="game-section" class="hidden">
+        <h2>Modo de Jogo</h2>
+        <p>Escolha como deseja jogar:</p>
+        <button id="level-1-button">Fase 1</button>
+        <button id="level-2-button">Fase 2</button>
+        <button id="game-back-button">Voltar</button>
+    </div>
+
+    
+
+
+    <!-- Seção "Configurações" inicialmente oculta -->
+    <div id="settings-section" class="hidden">
+        <h2>Configurações</h2>
+        <p>Configurações de áudio, acessibilidade e controles.</p>
+        <button id="settings-back-button">Voltar</button>
+    </div>
+
+    <!-- Seção "Sobre" inicialmente oculta -->
+    <div id="about-section" class="hidden">
+        <h2>Sobre o Jogo</h2>
+        <p>NextStage é um jogo de plataforma educativo que foi criado para entreter e educar alunos de todos os anos
+        e idades. O jogo é dividido em fases, cada uma com perguntas de múltipla escolha que testam o conhecimento do jogador em diferentes disciplinas.</p>
+        <p>O objetivo do jogo é responder corretamente às perguntas para avançar pelas fases e vencer o jogo. O jogador pode escolher entre diferentes modos de jogo, como "Fase 1" ou "Fase 2", e também pode ajustar as configurações de áudio e acessibilidade.</p>
+        Como Jogar:
+        1.clique no botão "Iniciar Jogo" para começar.
+        2.selecione o modo de jogo desejado.
+        3.responda às perguntas corretamente para avançar pelas fases.
+        4.Não deixe que os inimigos o atinjam, ou você perderá vidas.
+        5.seja rápido e estratégico para vencer o jogo.
+        6.divirta-se enquanto aprende! 
+
+        </p>
+        <button id="about-back-button">Voltar</button>
+    </div>
+
+
+
+    <div id="question-container" class="hidden">
+        <div id="question-box">
+            <p id="question-text"></p>
+           <div id="options-container" class="options-container"></div>
+            <button id="submit-answer">Responder</button>
+        </div>
+    </div>
+   
+    <div id="feedback-message" class="hidden">Você acertou!</div>
+   
+   
+    <div id="game-over-screen" class="hidden">
+     <div id="game-over-box">
+       <h1>GAME OVER</h1>
+       <button onclick="goToMainMenu()">Menu Principal</button>
+      </div>
+    </div>
+
+    <div id="game-container" class="hidden">
+       <div id="player"></div>
+       <canvas id="gameCanvas" width="1000" height="200"></canvas>
+    </div>
+
+
+
+
+    <div id="victory-screen" class="hidden">
+        <h1>Parabéns! Você venceu!</h1>
+        <button onclick="goToMainMenu()">Menu Principal</button>
+    </div>
+
+
+
+    <canvas id="gameCanvas" width="1000" height="200"></canvas>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+   
+
+
+</body>
+</html>
