@@ -228,7 +228,7 @@ function startLevel2() {
             { x: 1300, y: canvas.height - 380, width: 150, height: 10, color: "darkgreen"},
             { x: 800, y:canvas.height - 200, width: 150, height: 10, color:"darkgreen"},
             { x: 1100, y:canvas.height - 200, width: 150, height: 10, color:"darkgreen"},
-            {x: 1200, y:canvas.height - 150, width: 150, height: 10, color:"darkgreen"},
+            {x: 400, y:canvas.height - 350, width: 150, height: 10, color:"darkgreen"},
 
 
         ];
